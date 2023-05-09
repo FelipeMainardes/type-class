@@ -7,10 +7,11 @@ interface IRequest{
     description: string;
 }
 /*
- Definir o tipo de retorno []
+ Definir o tipo de retorno [x]
  Alterar o retorno de erro [x] 
- Acesar o repositorio []
- Retornar algo []
+ Acesar o repositorio [x]
+ Retornar algo [x]
+ Done [x]
 */
 class CreateCategoryUseCase{
     constructor(private categoriesRepository: ICategoriesRepository){

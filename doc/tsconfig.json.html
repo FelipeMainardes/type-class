@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>tsconfig.json</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="doc-style.css" />
+  <script src="doc-filelist.js"></script>
+  <script>
+    var relativeDir = "";
+    var thisFile = "tsconfig.json";
+    var defaultSidebar = true;
+  </script>
+  <script src="doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>tsconfig.json</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="json">{
+  <span class="hljs-attr">"compilerOptions"</span>: {
+    <span class="hljs-comment">/* Visit https://aka.ms/tsconfig to read more about this file */</span>
+
+    <span class="hljs-comment">/* Projects */</span>
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-2" id="section-2"></a>
+</div>
+<p>&quot;incremental&quot;: true,                              /* Save .tsbuildinfo files to allow for incremental compilation of projects. <em>/
+&quot;composite&quot;: true,                                /</em> Enable constraints that allow a TypeScript project to be used with project references. <em>/
+&quot;tsBuildInfoFile&quot;: &quot;./.tsbuildinfo&quot;,              /</em> Specify the path to .tsbuildinfo incremental compilation file. <em>/
+&quot;disableSourceOfProjectReferenceRedirect&quot;: true,  /</em> Disable preferring source files instead of declaration files when referencing composite projects. <em>/
+&quot;disableSolutionSearching&quot;: true,                 /</em> Opt a project out of multi-project reference checking when editing. <em>/
+&quot;disableReferencedProjectLoad&quot;: true,             /</em> Reduce the number of projects loaded automatically by TypeScript. */</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="json">
+    /* Language and Environment */
+    "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-3" id="section-3"></a>
+</div>
+<p>&quot;lib&quot;: [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. <em>/
+&quot;jsx&quot;: &quot;preserve&quot;,                                /</em> Specify what JSX code is generated. <em>/
+&quot;experimentalDecorators&quot;: true,                   /</em> Enable experimental support for TC39 stage 2 draft decorators. <em>/
+&quot;emitDecoratorMetadata&quot;: true,                    /</em> Emit design-type metadata for decorated declarations in source files. <em>/
+&quot;jsxFactory&quot;: &quot;&quot;,                                 /</em> Specify the JSX factory function used when targeting React JSX emit, e.g. 'React.createElement' or 'h'. <em>/
+&quot;jsxFragmentFactory&quot;: &quot;&quot;,                         /</em> Specify the JSX Fragment reference used for fragments when targeting React JSX emit e.g. 'React.Fragment' or 'Fragment'. <em>/
+&quot;jsxImportSource&quot;: &quot;&quot;,                            /</em> Specify module specifier used to import the JSX factory functions when using 'jsx: react-jsx*'. <em>/
+&quot;reactNamespace&quot;: &quot;&quot;,                             /</em> Specify the object invoked for 'createElement'. This only applies when targeting 'react' JSX emit. <em>/
+&quot;noLib&quot;: true,                                    /</em> Disable including any library files, including the default lib.d.ts. <em>/
+&quot;useDefineForClassFields&quot;: true,                  /</em> Emit ECMAScript-standard-compliant class fields. <em>/
+&quot;moduleDetection&quot;: &quot;auto&quot;,                        /</em> Control what method is used to detect module-format JS files. */</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="json">
+    /* Modules */
+    "module": "commonjs",                                /* Specify what module code is generated. */
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-4" id="section-4"></a>
+</div>
+<p>&quot;rootDir&quot;: &quot;./&quot;,                                  /* Specify the root folder within your source files. <em>/
+&quot;moduleResolution&quot;: &quot;node&quot;,                       /</em> Specify how TypeScript looks up a file from a given module specifier. <em>/
+&quot;baseUrl&quot;: &quot;./&quot;,                                  /</em> Specify the base directory to resolve non-relative module names. <em>/
+&quot;paths&quot;: {},                                      /</em> Specify a set of entries that re-map imports to additional lookup locations. <em>/
+&quot;rootDirs&quot;: [],                                   /</em> Allow multiple folders to be treated as one when resolving modules. <em>/
+&quot;typeRoots&quot;: [],                                  /</em> Specify multiple folders that act like './node_modules/@types'. <em>/
+&quot;types&quot;: [],                                      /</em> Specify type package names to be included without being referenced in a source file. <em>/
+&quot;allowUmdGlobalAccess&quot;: true,                     /</em> Allow accessing UMD globals from modules. <em>/
+&quot;moduleSuffixes&quot;: [],                             /</em> List of file name suffixes to search when resolving a module. */</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="json">     "resolveJsonModule": true,                        /* Enable importing .json files. */
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-5" id="section-5"></a>
+</div>
+<p>&quot;noResolve&quot;: true,                                /* Disallow 'import's, 'require's or '<reference>'s from expanding the number of files TypeScript should add to a project. */</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="json">
+    <span class="hljs-comment">/* JavaScript Support */</span>
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-6" id="section-6"></a>
+</div>
+<p>&quot;allowJs&quot;: true,                                  /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. <em>/
+&quot;checkJs&quot;: true,                                  /</em> Enable error reporting in type-checked JavaScript files. <em>/
+&quot;maxNodeModuleJsDepth&quot;: 1,                        /</em> Specify the maximum folder depth used for checking JavaScript files from 'node_modules'. Only applicable with 'allowJs'. */</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="json">
+    <span class="hljs-comment">/* Emit */</span>
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-7" id="section-7"></a>
+</div>
+<p>&quot;declaration&quot;: true,                              /* Generate .d.ts files from TypeScript and JavaScript files in your project. <em>/
+&quot;declarationMap&quot;: true,                           /</em> Create sourcemaps for d.ts files. <em>/
+&quot;emitDeclarationOnly&quot;: true,                      /</em> Only output d.ts files and not JavaScript files. <em>/
+&quot;sourceMap&quot;: true,                                /</em> Create source map files for emitted JavaScript files. <em>/
+&quot;outFile&quot;: &quot;./&quot;,                                  /</em> Specify a file that bundles all outputs into one JavaScript file. If 'declaration' is true, also designates a file that bundles all .d.ts output. */</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="json">     "outDir": "./dist",                                   /* Specify an output folder for all emitted files. */
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-8" id="section-8"></a>
+</div>
+<p>&quot;removeComments&quot;: true,                           /* Disable emitting comments. <em>/
+&quot;noEmit&quot;: true,                                   /</em> Disable emitting files from a compilation. <em>/
+&quot;importHelpers&quot;: true,                            /</em> Allow importing helper functions from tslib once per project, instead of including them per-file. <em>/
+&quot;importsNotUsedAsValues&quot;: &quot;remove&quot;,               /</em> Specify emit/checking behavior for imports that are only used for types. <em>/
+&quot;downlevelIteration&quot;: true,                       /</em> Emit more compliant, but verbose and less performant JavaScript for iteration. <em>/
+&quot;sourceRoot&quot;: &quot;&quot;,                                 /</em> Specify the root path for debuggers to find the reference source code. <em>/
+&quot;mapRoot&quot;: &quot;&quot;,                                    /</em> Specify the location where debugger should locate map files instead of generated locations. <em>/
+&quot;inlineSourceMap&quot;: true,                          /</em> Include sourcemap files inside the emitted JavaScript. <em>/
+&quot;inlineSources&quot;: true,                            /</em> Include source code in the sourcemaps inside the emitted JavaScript. <em>/
+&quot;emitBOM&quot;: true,                                  /</em> Emit a UTF-8 Byte Order Mark (BOM) in the beginning of output files. <em>/
+&quot;newLine&quot;: &quot;crlf&quot;,                                /</em> Set the newline character for emitting files. <em>/
+&quot;stripInternal&quot;: true,                            /</em> Disable emitting declarations that have '@internal' in their JSDoc comments. <em>/
+&quot;noEmitHelpers&quot;: true,                            /</em> Disable generating custom helper functions like '__extends' in compiled output. <em>/
+&quot;noEmitOnError&quot;: true,                            /</em> Disable emitting files if any type checking errors are reported. <em>/
+&quot;preserveConstEnums&quot;: true,                       /</em> Disable erasing 'const enum' declarations in generated code. <em>/
+&quot;declarationDir&quot;: &quot;./&quot;,                           /</em> Specify the output directory for generated declaration files. <em>/
+&quot;preserveValueImports&quot;: true,                     /</em> Preserve unused imported values in the JavaScript output that would otherwise be removed. */</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="json">
+    <span class="hljs-comment">/* Interop Constraints */</span>
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-9" id="section-9"></a>
+</div>
+<p>&quot;isolatedModules&quot;: true,                          /* Ensure that each file can be safely transpiled without relying on other imports. <em>/
+&quot;allowSyntheticDefaultImports&quot;: true,             /</em> Allow 'import x from y' when a module doesn't have a default export. */</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="json">    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-10" id="section-10"></a>
+</div>
+<p>&quot;preserveSymlinks&quot;: true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="json">    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+
+    /* Type Checking */
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-11" id="section-11"></a>
+</div>
+<p>&quot;strict&quot;: true /*                                      /* Enable all strict type-checking options. <em>/
+&quot;noImplicitAny&quot;: true,                            /</em> Enable error reporting for expressions and declarations with an implied 'any' type. <em>/
+&quot;strictNullChecks&quot;: true,                         /</em> When type checking, take into account 'null' and 'undefined'. <em>/
+&quot;strictFunctionTypes&quot;: true,                      /</em> When assigning functions, check to ensure parameters and the return values are subtype-compatible. <em>/
+&quot;strictBindCallApply&quot;: true,                      /</em> Check that the arguments for 'bind', 'call', and 'apply' methods match the original function. <em>/
+&quot;strictPropertyInitialization&quot;: true,             /</em> Check for class properties that are declared but not set in the constructor. <em>/
+&quot;noImplicitThis&quot;: true,                           /</em> Enable error reporting when 'this' is given the type 'any'. <em>/
+&quot;useUnknownInCatchVariables&quot;: true,               /</em> Default catch clause variables as 'unknown' instead of 'any'. <em>/
+&quot;alwaysStrict&quot;: true,                             /</em> Ensure 'use strict' is always emitted. <em>/
+&quot;noUnusedLocals&quot;: true,                           /</em> Enable error reporting when local variables aren't read. <em>/
+&quot;noUnusedParameters&quot;: true,                       /</em> Raise an error when a function parameter isn't read. <em>/
+&quot;exactOptionalPropertyTypes&quot;: true,               /</em> Interpret optional property types as written, rather than adding 'undefined'. <em>/
+&quot;noImplicitReturns&quot;: true,                        /</em> Enable error reporting for codepaths that do not explicitly return in a function. <em>/
+&quot;noFallthroughCasesInSwitch&quot;: true,               /</em> Enable error reporting for fallthrough cases in switch statements. <em>/
+&quot;noUncheckedIndexedAccess&quot;: true,                 /</em> Add 'undefined' to a type when accessed using an index. <em>/
+&quot;noImplicitOverride&quot;: true,                       /</em> Ensure overriding members in derived classes are marked with an override modifier. <em>/
+&quot;noPropertyAccessFromIndexSignature&quot;: true,       /</em> Enforces using indexed accessors for keys declared using an indexed type. <em>/
+&quot;allowUnusedLabels&quot;: true,                        /</em> Disable error reporting for unused labels. <em>/
+&quot;allowUnreachableCode&quot;: true,                     /</em> Disable error reporting for unreachable code. */</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="json">
+    <span class="hljs-comment">/* Completeness */</span>
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-12" id="section-12"></a>
+</div>
+<p>&quot;skipDefaultLibCheck&quot;: true,                      /* Skip type checking .d.ts files that are included with TypeScript. */</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="json">    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+  }
+}
+
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>

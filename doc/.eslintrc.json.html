@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>.eslintrc.json</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="doc-style.css" />
+  <script src="doc-filelist.js"></script>
+  <script>
+    var relativeDir = "";
+    var thisFile = ".eslintrc.json";
+    var defaultSidebar = true;
+  </script>
+  <script src="doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>.eslintrc.json</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="json">{
+    <span class="hljs-attr">"env"</span>: {
+        <span class="hljs-attr">"es2020"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"node"</span>: <span class="hljs-literal">true</span>,
+				<span class="hljs-attr">"jest"</span>: <span class="hljs-literal">true</span>
+    },
+    <span class="hljs-attr">"extends"</span>: [
+        <span class="hljs-string">"airbnb-base"</span>,
+        <span class="hljs-string">"plugin:@typescript-eslint/recommended"</span>,
+        <span class="hljs-string">"prettier"</span>,
+        <span class="hljs-string">"plugin:prettier/recommended"</span>
+    ],
+    <span class="hljs-attr">"parser"</span>: <span class="hljs-string">"@typescript-eslint/parser"</span>,
+    <span class="hljs-attr">"parserOptions"</span>: {
+        <span class="hljs-attr">"ecmaVersion"</span>: <span class="hljs-number">12</span>,
+        <span class="hljs-attr">"sourceType"</span>: <span class="hljs-string">"module"</span>
+    },
+    <span class="hljs-attr">"plugins"</span>: [
+        <span class="hljs-string">"@typescript-eslint"</span>,
+        <span class="hljs-string">"eslint-plugin-import-helpers"</span>,
+        <span class="hljs-string">"prettier"</span>
+    ],
+    <span class="hljs-attr">"rules"</span>: {
+      <span class="hljs-attr">"camelcase"</span>: <span class="hljs-string">"off"</span>,
+			<span class="hljs-attr">"import/no-unresolved"</span>: <span class="hljs-string">"error"</span>,
+			<span class="hljs-attr">"@typescript-eslint/naming-convention"</span>: [
+			  <span class="hljs-string">"error"</span>,
+			  {
+			    <span class="hljs-attr">"selector"</span>: <span class="hljs-string">"interface"</span>,
+			    <span class="hljs-attr">"format"</span>: [<span class="hljs-string">"PascalCase"</span>],
+			    <span class="hljs-attr">"custom"</span>: {
+			      <span class="hljs-attr">"regex"</span>: <span class="hljs-string">"^I[A-Z]"</span>,
+			      <span class="hljs-attr">"match"</span>: <span class="hljs-literal">true</span>
+			    }
+			  }
+			],
+			<span class="hljs-attr">"class-methods-use-this"</span>: <span class="hljs-string">"off"</span>,
+			<span class="hljs-attr">"import/prefer-default-export"</span>: <span class="hljs-string">"off"</span>,
+			<span class="hljs-attr">"no-shadow"</span>: <span class="hljs-string">"off"</span>,
+			<span class="hljs-attr">"no-console"</span>: <span class="hljs-string">"off"</span>,
+			<span class="hljs-attr">"no-useless-constructor"</span>: <span class="hljs-string">"off"</span>,
+			<span class="hljs-attr">"no-empty-function"</span>: <span class="hljs-string">"off"</span>,
+			<span class="hljs-attr">"lines-between-class-members"</span>: <span class="hljs-string">"off"</span>,
+			<span class="hljs-attr">"import/extensions"</span>: [
+			  <span class="hljs-string">"error"</span>,
+			  <span class="hljs-string">"ignorePackages"</span>,
+			  {
+			    <span class="hljs-attr">"ts"</span>: <span class="hljs-string">"never"</span>
+			  }
+			],
+			<span class="hljs-attr">"import-helpers/order-imports"</span>: [
+			  <span class="hljs-string">"warn"</span>,
+			  {
+			    <span class="hljs-attr">"newlinesBetween"</span>: <span class="hljs-string">"always"</span>,
+			    <span class="hljs-attr">"groups"</span>: [<span class="hljs-string">"module"</span>, <span class="hljs-string">"/^@shared/"</span>, [<span class="hljs-string">"parent"</span>, <span class="hljs-string">"sibling"</span>, <span class="hljs-string">"index"</span>]],
+			    <span class="hljs-attr">"alphabetize"</span>: { <span class="hljs-attr">"order"</span>: <span class="hljs-string">"asc"</span>, <span class="hljs-attr">"ignoreCase"</span>: <span class="hljs-literal">true</span> }
+			  }
+			],
+			<span class="hljs-attr">"import/no-extraneous-dependencies"</span>: [
+			  <span class="hljs-string">"error"</span>,
+			  { <span class="hljs-attr">"devDependencies"</span>: [<span class="hljs-string">"**/*.spec.js"</span>] }
+			],
+            <span class="hljs-attr">"prettier/prettier"</span>: <span class="hljs-string">"error"</span>
+
+            
+    },
+    <span class="hljs-attr">"settings"</span>: {
+        <span class="hljs-attr">"import/resolver"</span>: {
+            <span class="hljs-attr">"typescript"</span>: {}
+        }
+    }
+}
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>
