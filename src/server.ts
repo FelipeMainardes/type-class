@@ -1,8 +1,6 @@
 import express, { request, response } from 'express';
 import swaggerUi from "swagger-ui-express"
-
 import swaggerfile from '../swagger.json'
-
 import { router } from './routes';
 
 import "./database";
